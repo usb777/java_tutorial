@@ -1,0 +1,211 @@
+tar xzf <the file you just downloaded>
+=======sudo tar xzf jdk-8u77-linux-x64.tar.gz
+sudo tar zxvf jre-8u73-linux-x64.tar.gz
+/*
+As your normal user, add or change these two lines in your ~/.profile to point to the installation;
+*/
+
+export JAVA_HOME=/usr/local/jdk1.8.0_77
+export PATH=$PATH:$JAVA_HOME/bin
+
+
+COOL---
+ABout GOOD Installing JAVA with Env variable
+http://theopentutorials.com/tutorials/java/installing-jdk-on-ubuntu-linux/
+
+
+JAVA_HOME=~/jdk1.8.0_77
+PATH DEFAULT=${PATH}:${JAVA_HOME}/bin
+
+
+
+============access file================
+sudo chmod a+rwx [filename.fileExt]                         400 - read, 600 -rw, 0777 -full
+
+Move file from to : sudo mv  /Downloads/hadoop-3.0.2  /etc/           
+
+Copy file to:       sudo cp -r /home/dzen-dzimon/Downloads/STS.ini  /home/dzen-dzimon/sts-bundle/sts-3.9.5.RELEASE/
+
+wich   [program]               - show path where program
+
+sudo apt install synaptic
+
+=================Install or Uninstall==========================
+https://vitux.com/how-to-use-apt-get-package-manager-on-ubuntu-command-line/
+
+=================END Install or Uninstall==========================
+
+
+===============Kill process============
+ps -ax | grep application name 
+
+//If your searching for firefox type in terminal like ps -ax | grep firefox, it shows the process 
+// id of corresponding application. You can stop that application by kill command if process id=1317,
+
+kill -9 1317
+
+
+
+
+
+=============================Spring MVC============================================
+
+-vm
+/usr/local/jdk1.8.0_77/bin
+-startup
+plugins/org.eclipse.equinox.launcher_1.5.0.v20180512-1130.jar
+--launcher.library
+plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.700.v20180518-1200
+-product
+org.springsource.sts.ide
+--launcher.defaultAction
+openFile
+-vmargs
+-Dosgi.requiredJavaVersion=1.8
+--add-modules=ALL-SYSTEM
+-Xms40m
+-Dosgi.module.lock.timeout=10
+-Xmx1200m
+
+
+https://stackoverflow.com/questions/31662983/how-can-i-install-the-spring-tool-suite-in-ubuntu
+
+
+===============================TOMCAT=====================================================
+==catalina.sh== 
+
+export JAVA_HOME=/usr/local/jdk1.8.0_77/bin
+echo "Using JAVA_HOME:       $JAVA_HOME"
+
+https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04
+
+=============================MYSQL=============================================
+https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04
+
+user = root
+password = ''
+
+DATABASE: first;
+table user(id - pk, int  ; name- varchar 100);   - 3 rows
+
+==Command====
+sudo service mysql stop;
+sudo service mysql start;
+
+
+sudo mysql -u root -p first
+mysql> flush privilegies;
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';
+
+
+MYSQL WORKBENCH
+https://www.linode.com/docs/databases/mysql/install-and-configure-mysql-workbench-on-ubuntu/
+start: 
+
+
+
+
+
+==============Mongo DB========================
+http://central.maven.org/maven2/org/mongodb/mongo-java-driver/3.9.1/     -  JAR ARCHIVES
+
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+
+
+
+===============================PS vita======================================================
+Rainbow Moon
+Freedom Wars
+Oreshika
+
+
+=============================Android Studio ===================================================
+How to start debug on my device?   Goto MENU   Tools---->Connection Assistant--->Next
+Find your device. Enable USB debugging on your device.
+
+adb  kill-server
+sudo adb  start-server
+sudo adb devices
+
+====================================ICON====================================================
+
+https://linuxconfig.org/how-to-create-desktop-shortcut-launcher-on-ubuntu-18-04-bionic-beaver-linux
+
+===================================================================================================
+
+=============== Convert .rpm to .deb========================================
+
+Once it is installed, make sure that the software package you have downloaded is an .rpm file. Go to the folder where your .rpm file is located. Once you have the .rpm file ready, simply run the command:
+
+$ sudo alien <name of package>.rpm
+
+5. Install the Converted Package
+
+It may take a moment for the file to convert. Once it is done, install the file normally by using dpkg:
+
+
+$ sudo dpkg -i <name of package>.deb
+
+
+
+It should install like a regular .deb package file. You can now use your newly-installed software normally. 
+
+=====================================Kill Process=========================================================
+
+ kill $(pidof -s qmmp) 
+
+
+
+
+
+
+
+
+
+============================MY APP=====================================
+
+
+
+Shutter - app for ScreenSHot
+
+
+SImpleScreenRecorder - app for recording video from Desktop
+
+
+VidCutter - cut and merge video
+
+
+deluge - torrent client 
+
+
+Qmpp - Winamp for Ubuntu
+
+
+Liferea  - rss agregator
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
